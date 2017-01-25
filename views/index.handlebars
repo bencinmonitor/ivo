@@ -1,0 +1,70 @@
+<h1 class="brand">
+    <span class="petrol">petrol</span><span>ivo</span>
+</h1>
+
+<form id="stdin">
+    <div id="microphone"></div>
+    <input id="text" type="text" placeholder="Kaj želiš izvedeti?">
+</form>
+
+<div id="data"></div>
+
+<div class="docs-section">
+    <p class="footer-note">
+        <a href="http://ivo.si">ivo</a> je prototip Petrolovega inteligentnega asistenta.
+        Pri razvoju so sodelovali:
+        <a href="http://twitter.com/otobrglez">Oto Brglez</a>,
+        <a href="http://twitter.com/markoxvee">Marko Vuletič</a>,
+        <span>Eva Urbanc</span>,
+        <a href="https://twitter.com/jskrablin">Jožko Škrablin</a> in
+        <a href="https://twitter.com/solarb">Blaž Šolar</a>.
+        Razvit je bil na <a href="https://abc-accelerator.com/petrol-hackathon/">ABC Accelerator</a> /
+        <a href="http://petrol.si">PETROL Poslovnem hackathon-u 2017.</a>
+
+    </p>
+</div>
+
+<script id="results_template" type="text/x-handlebars-template">
+    <div class="stations">
+        \{{#each stations as |value key|}}
+        <div class="station">
+            <h4>
+                \{{value.address}} <strong class="pull-right">\{{human_distance}}</strong>
+            </h4>
+
+            <p class="services">
+                \{{#each value.services_show as |srv|}}
+                \{{#if srv.found}}
+                <span class="service not-found">\{{srv.value}}</span>
+                \{{else}}
+                <span class="service found">\{{srv.value}}</span>
+                \{{/if}}
+                \{{/each}}
+            </p>
+
+            <div class="row">
+                <div class="six columns">
+                    <ul>\{{#each value.shopping_hours_humans_array as |oc|}}
+                        <li><span class="open-time">
+                        \{{oc.key}} \{{oc.value}}
+                    </span>\{{/each}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <ul>\{{#each value.prices_human as |pr|}}
+                        <li><span class="open-time">
+                            \{{pr.key}} \{{pr.value}} EUR
+                            </span>\{{/each}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>
+                <a class="button button-primary pb">Vodi me do postaje!</a>
+            </p>
+        </div>
+        \{{/each}}
+    </div>
+</script>

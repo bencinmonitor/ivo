@@ -1,0 +1,77 @@
+html, body
+  background-color: #fafafa
+
+html, body, td, th, p, form, input, select, option
+  font-family: sans-serif
+
+h1.brand
+  margin-top: 30px
+  .petrol
+    color: red
+    &::after
+      color: lightgray
+      content: '/'
+
+#stdin
+  position: relative
+
+  #microphone
+    position: absolute
+    background-image: url('/images/icn-microphone.png')
+    background-repeat: no-repeat
+    background-position: center center
+    display: block
+    height: 44px
+    width: 44px
+    right: 24px
+    top: 10px
+
+
+  #text
+    width: 100%
+    font-size: 20px
+    height: 64px
+    padding: 3px
+    background: #FFFFFF
+    border: 1px solid #BDC3C7
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.20)
+    border-radius: 0px
+    padding-left: 24px
+    color: #7f7f7f
+
+.pull-right
+  float: right
+
+.stations
+  .station
+    border-bottom: 1px solid #EEE
+    .services
+      color: #B3B3B3
+      .service
+        // font-size: 10px
+        padding: 5px
+
+        &.found
+          font-weight: bold
+          color: #333333
+          background-color: #c0c0c0
+          margin-right: 2px;
+          margin-bottom: 2px;
+
+.footer-note
+  padding-top: 10px
+  margin: 0 auto
+  max-width: 75%
+  color: #B3B3B3
+  font-size: 12px
+  text-align: center
+  a
+    color: #333333
+
+
+.button.button-primary.pb
+  border: none
+  border-radius: 0
+  background-color: #0451A3
+  &:hover
+    background-color: #1D62AC

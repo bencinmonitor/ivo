@@ -1,0 +1,72 @@
+html, body {
+  background-color: #fafafa; }
+
+html, body, td, th, p, form, input, select, option {
+  font-family: sans-serif; }
+
+h1.brand {
+  margin-top: 30px; }
+  h1.brand .petrol {
+    color: red; }
+    h1.brand .petrol::after {
+      color: lightgray;
+      content: '/'; }
+
+#stdin {
+  position: relative; }
+  #stdin #microphone {
+    position: absolute;
+    background-image: url("/images/icn-microphone.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 44px;
+    width: 44px;
+    right: 24px;
+    top: 10px; }
+  #stdin #text {
+    width: 100%;
+    font-size: 20px;
+    height: 64px;
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid #BDC3C7;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    padding-left: 24px;
+    color: #7f7f7f; }
+
+.pull-right {
+  float: right; }
+
+.stations .station {
+  border-bottom: 1px solid #EEE; }
+  .stations .station .services {
+    color: #B3B3B3; }
+    .stations .station .services .service {
+      padding: 5px; }
+      .stations .station .services .service.found {
+        font-weight: bold;
+        color: #333333;
+        background-color: #c0c0c0;
+        margin-right: 2px;
+        margin-bottom: 2px; }
+
+.footer-note {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 75%;
+  color: #B3B3B3;
+  font-size: 12px;
+  text-align: center; }
+  .footer-note a {
+    color: #333333; }
+
+.button.button-primary.pb {
+  border: none;
+  border-radius: 0;
+  background-color: #0451A3; }
+  .button.button-primary.pb:hover {
+    background-color: #1D62AC; }
+
+/*# sourceMappingURL=style.css.map */

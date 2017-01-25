@@ -1,0 +1,37 @@
+{
+  "name": "ivo",
+  "version": "1.0.0",
+  "description": "ivo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencinmonitor/ivo.git"
+  },
+  "keywords": [
+    "ivo"
+  ],
+  "author": "Oto Brglez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencinmonitor/ivo/issues"
+  },
+  "homepage": "https://github.com/bencinmonitor/ivo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.4",
+    "morgan": "^1.7.0",
+    "node-sass-middleware": "^0.10.1",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
